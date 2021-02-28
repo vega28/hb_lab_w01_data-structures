@@ -73,6 +73,16 @@ def students_by_cohort(filename, cohort='All'):
 
     return sorted(students)
 
+    # read in file
+    # make new empty list
+    # parse data by line (splitting)
+    # for each line, assign variable to student first name, last name and cohort
+    #   if the students cohort matches the cohort argument, add to the new list
+    #   if no cohort is given, print all students
+    #     remove teachers and ghosts
+    # alphabetize the list
+    # return sorted students list
+
 
 def all_names_by_house(filename):
     """Return a list that contains rosters for all houses, ghosts, instructors.
