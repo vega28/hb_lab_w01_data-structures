@@ -22,13 +22,19 @@ def all_houses(filename):
     for line in school_data:
       student_data = line.split("|")
       house = student_data[2]
+      if house == "":
+        continue
       houses.add(house)
+      # if house != '':
+      #   houses.add(house)
 
       # first_name = student_data[0]
       # last_name = student_data[1]
       # house = student_data[2]
       # advisor = student_data[3]
       # conort_name = student_data[4]
+
+    # houses.remove('')
 
     return houses
 
